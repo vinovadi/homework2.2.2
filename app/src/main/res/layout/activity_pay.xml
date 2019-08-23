@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PayActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <EditText
+        android:id="@+id/txtInputMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/input_money"
+        android:inputType="textPersonName"
+        android:textAllCaps="false"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/txtInvitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/invitation"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/chkBxBankCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bank_card" />
+
+    <CheckBox
+        android:id="@+id/chkBxMobilePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile_phone" />
+
+    <CheckBox
+        android:id="@+id/chkBxCash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cash" />
+
+    <EditText
+        android:id="@+id/txtPaymentInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/payment_info"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:text="@string/pay_button" />
+</LinearLayout>
